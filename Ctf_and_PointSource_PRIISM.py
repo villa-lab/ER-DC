@@ -335,7 +335,7 @@ if os.path.isfile(tfName) == False:
     call(["FTransform3D {} {} -same_units -shift={}:{}:{} -xpad=0 -ypad=0 -zpad=0".format(ewbpName, tfName, str(xshift), str(zshift), str(yshift))], shell=True)
     
 else:
-    print("Transfer Function Exists, skipping to Deconvolution")
+    print("Transfer Function Exists")
     
 #######################################################################################
 ## Reconstruct the Tomogram to be deconvolved
